@@ -16,16 +16,7 @@ class ResendOtpController extends Controller
 	        $message='New OTP is:'.$OTP;
 	        $mobile_no = $resendotp->phone;
 
-	        // $url= "https://api.smsu.in/smpp/?username=tridentnew&password=PXjWaj5Hd&from=TRIDNT&to=".$mobile_no."&text=".urlencode($message)."";
-	        // $curl_session = curl_init();
-	        // curl_setopt($curl_session, CURLOPT_URL, $url);
-	        // curl_setopt($curl_session, CURLOPT_HTTPGET, true);
-	        // //curl_setopt($curl_session, CURLOPT_HTTPHEADER, true);
-	        // curl_setopt($curl_session, CURLOPT_RETURNTRANSFER, true);
-	        // curl_setopt($curl_session, CURLOPT_SSL_VERIFYPEER,false);
-	        // curl_setopt($curl_session, CURLOPT_IPRESOLVE,CURL_IPRESOLVE_V4);    
-	        // $res=curl_exec($curl_session);
-	        // curl_close($curl_session);
+	        
 
 	        $data['isVerified'] = 0;
 	        $data['otp'] = $OTP;
